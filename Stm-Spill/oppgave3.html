@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barnepratt Klosser et verktøy for enkle og morsome spill</title>
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <script type="module">
+        // ALDRI ENDRE NOE INNEN FOR Regionen
+import * as Blocks from "./barneprat/blocks.mjs";
+import * as Actions from "./barneprat/actions.mjs";
+import * as Utils from "./barneprat/utils.mjs";
+import { removeAll } from "./barneprat/globalTimer.mjs";
+await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+
+const GaaTil = (maal) => {
+    document.body.innerHTML = "";
+    removeAll();
+    maal();
+}
+
+const Start = (maal) => {
+    if (window.location.hash) {
+        maal = window.location.hash.replace("#", "")
+        eval(maal)();
+    } else {
+        GaaTil(maal);
+    }
+}
+//spill koden:
+
+Start(oppgave3);
+
+
+
+function oppgave3() {
+const background = new Blocks.Image("../Bilder/Bakgrunnpaaske.jpg", { x: 0, y: 0, width: 1080, height: 810 });
+
+new Blocks.Text("Harehopp", { style: "overskrift2", x: 100, y: 50, width: 300, height: 100 })
+const oppg3lyd = new Blocks.Sound("../Lydfil/Oppgave3-Harehopp.m4a", { loop: false, auto: true });
+const ferdigoppg3 = new Blocks.Sound("../Lydfil/Oppgave3-ferdigKnapp.m4a", { loop: false, auto: false });
+const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
+const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 }); 
+const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.PNG", { x: 230, y: 200, width: 500, height: 450 });
+const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
+
+Gladkylling_v2.hide();
+   
+   Actions.Click(Leisegkylling,() => {
+        oppg3lyd.start()
+        spillIgjennKnapp.show();
+    } ); 
+       
+    Actions.Click(ferdigKnapp, () => {
+        Leisegkylling.hide();
+        Gladkylling_v2.show();
+        oppg3lyd.stop();
+        ferdigoppg3.start();
+    }) 
+
+    Actions.Click(spillIgjennKnapp, () =>{
+        oppg3lyd.start()
+        //spillIgjennKnapp.hide(); 
+    }  ); 
+
+    Actions.Click(Gladkylling_v2, () =>{
+        ferdigKnapp.show ()
+        ferdigoppg3.start();
+        
+    
+    });
+        
+
+
+
+    
+    
+    
+    
+
+
+}
+
+
+
+    </script>
+</body>
+
+</html>

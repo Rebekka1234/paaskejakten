@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barnepratt Klosser et verktøy for enkle og morsome spill</title>
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <script type="module">
+        // ALDRI ENDRE NOE INNEN FOR Regionen
+import * as Blocks from "./barneprat/blocks.mjs";
+import * as Actions from "./barneprat/actions.mjs";
+import * as Utils from "./barneprat/utils.mjs";
+import { removeAll } from "./barneprat/globalTimer.mjs";
+await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+
+const GaaTil = (maal) => {
+    document.body.innerHTML = "";
+    removeAll();
+    maal();
+}
+
+const Start = (maal) => {
+    if (window.location.hash) {
+        maal = window.location.hash.replace("#", "")
+        eval(maal)();
+    } else {
+        GaaTil(maal);
+    }
+}
+//spill koden:
+
+Start(oppgave1);
+
+function oppgave1() {
+    const background = new Blocks.Image("../Bilder/Bakgrunnpaaske.jpg", { x: 0, y: 0, width: 1080, height: 810 });
+
+    const tekst = new Blocks.Text("Akebakken", { style: "overskrift2", x: 20, y: 50, width: 200, height: 100 })
+    //oppgave2();
+    //oppgave3();
+    //oppgave4();
+    //oppgave5();
+    //oppgave6();
+    //oppgave7();
+    //oppgave8();
+    //oppgave9();
+    //oppgave10();
+
+    const Tristkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
+    const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
+    const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
+    const oppg1lyd = new Blocks.Sound("../Lydfil/Oppgave1-Akebakken.m4a", { loop: false, auto: true });
+    const ferdigoppg1 = new Blocks.Sound("../Lydfil/Oppgave1-ferdigKnapp.m4a", { loop: false, auto: false });
+    
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 });
+    spillIgjennKnapp.hide();new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 });
+
+    Gladkylling_v2.hide();
+
+    Actions.Click(Tristkylling, () =>{
+        oppg1lyd.start();
+        spillIgjennKnapp.show(); 
+    }
+        
+    );
+
+    Actions.Click(ferdigKnapp, () => {
+        Tristkylling.hide();
+        Gladkylling_v2.show();
+        oppg1lyd.stop();
+        ferdigoppg1.start();
+    })
+    
+
+    Actions.Click(spillIgjennKnapp, () =>{
+        oppg1lyd.start()
+        //spillIgjennKnapp.hide(); 
+    }  );
+
+    Actions.Click(Gladkylling_v2, () =>{
+        ferdigKnapp.show ()
+        ferdigoppg1.start();
+        
+    
+    });
+       
+}
+    </script>
+</body>
+
+</html>
