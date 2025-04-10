@@ -50,7 +50,7 @@ function oppgave1() {
     //oppgave9();
     //oppgave10();
 
-    const Tristkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
+    const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
     const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
     const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
     const oppg1lyd = new Blocks.Sound("../Lydfil/Oppgave1-Akebakken.m4a", { loop: false, auto: true });
@@ -61,7 +61,7 @@ function oppgave1() {
 
     Gladkylling_v2.hide();
 
-    Actions.Click(Tristkylling, () =>{
+    Actions.Click(Leisegkylling, () =>{
         oppg1lyd.start();
         spillIgjennKnapp.show(); 
     }
@@ -69,7 +69,7 @@ function oppgave1() {
     );
 
     Actions.Click(ferdigKnapp, () => {
-        Tristkylling.hide();
+        Leisegkylling.hide();
         Gladkylling_v2.show();
         oppg1lyd.stop();
         ferdigoppg1.start();

@@ -44,12 +44,12 @@ function oppgave4() {
     new Blocks.Text("Puslespill", { style: "overskrift2", x: 100, y: 50, width: 200, height: 100 })
     const ferdigoppg4 = new Blocks.Sound("../Lydfil/Oppgave4-ferdigKnapp.m4a", { loop: false, auto: true });
     const Gladkylling_v2 = new Blocks.Image("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 }); 
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 }); 
 
     Actions.Click(Gladkylling_v2,() => {
         spillIgjennKnapp.show ();
         ferdigoppg4.start ();
-    } );
+    } )
 
     Actions.Click(spillIgjennKnapp, () =>{
         ferdigoppg4.start()

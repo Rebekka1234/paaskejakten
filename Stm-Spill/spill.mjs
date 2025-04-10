@@ -97,8 +97,8 @@ function oppgave2() {
     const oppg2lyd = new Blocks.Sound("../Lydfil/Oppgave2-RegningAvEgg.m4a", { loop: false, auto: true });
     const ferdigoppg2 = new Blocks.Sound ("../Lydfil/Oppgave2-ferdigKnapp.m4a", { loop: false, auto: false });
     const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 });
-    const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.PNG", { x: 230, y: 200, width: 500, height: 450 });
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 });
+    const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
     const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
     Gladkylling_v2.hide();
    
@@ -139,8 +139,8 @@ new Blocks.Text("Harehopp", { style: "overskrift2", x: 100, y: 50, width: 300, h
 const oppg3lyd = new Blocks.Sound("../Lydfil/Oppgave3-Harehopp.m4a", { loop: false, auto: true });
 const ferdigoppg3 = new Blocks.Sound("../Lydfil/Oppgave3-ferdigKnapp.m4a", { loop: false, auto: false });
 const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 }); 
-const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.PNG", { x: 230, y: 200, width: 500, height: 450 });
+const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 }); 
+const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
 const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
 
 Gladkylling_v2.hide();
@@ -186,7 +186,7 @@ function oppgave4() {
     new Blocks.Text("Puslespill", { style: "overskrift2", x: 100, y: 50, width: 200, height: 100 })
     const ferdigoppg4 = new Blocks.Sound("../Lydfil/Oppgave4-ferdigKnapp.m4a", { loop: false, auto: true });
     const Gladkylling_v2 = new Blocks.Image("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 }); 
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 }); 
 
     Actions.Click(Gladkylling_v2,() => {
         spillIgjennKnapp.show ();
@@ -211,8 +211,8 @@ function oppgave5() {
     const oppg5lyd = new Blocks.Sound("../Lydfil/Oppgave5-Eggjakt.m4a", { loop: false, auto: true });
     const ferdigoppg5 = new Blocks.Sound ("../Lydfil/Oppgave5-ferdigKnapp.m4a", { loop: false, auto: false });
     const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 });
-   const Gladkylling_v2 = new Blocks.Image("../Bilder/Gladkylling_v2.PNG", { x: 230, y: 200, width: 500, height: 450 });
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 });
+   const Gladkylling_v2 = new Blocks.Image("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
    const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
 
    Gladkylling_v2.hide();
@@ -261,8 +261,8 @@ function oppgave6() {
     const oppg6lyd = new Blocks.Sound("../Lydfil/Oppgave6-fiskedam.m4a", { loop: false, auto: true });
     const ferdigoppg6 = new Blocks.Sound ("../Lydfil/Oppgave6-ferdigknapp.m4a", { loop: false, auto: false });
     const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp= new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 150, height: 100 });
-    const Gladkylling_v2 = new Blocks.Image ("../Bilder/Gladkylling_v2.PNG", { x:230, y: 200, width: 500, height: 450 });
+    const spillIgjennKnapp= new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 150, height: 100 });
+    const Gladkylling_v2 = new Blocks.Image ("../Bilder/Gladkylling_v2.png", { x:230, y: 200, width: 500, height: 450 });
     const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
 
     Gladkylling_v2.hide();
@@ -307,8 +307,8 @@ function oppgave7() {
     const oppg7lyd = new Blocks.Sound("../Lydfil/Oppgave7-StavingavHare.m4a", { loop: false, auto: true });
     const ferdigoppg7= new Blocks.Sound ("../Lydfil/Oppgave7-ferdigknapp.m4a", { loop: false, auto: false }); 
     const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 150, height: 100 });
-    const Gladkylling_v2 = new Blocks.Image ("../Bilder/Gladkylling_v2.PNG", { x: 230, y: 200, width: 500, height: 450 });
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 150, height: 100 });
+    const Gladkylling_v2 = new Blocks.Image ("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
     const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
 
     Gladkylling_v2.hide();
@@ -359,8 +359,8 @@ function oppgave8() {
     const oppg8lyd = new Blocks.Sound("../Lydfil/Oppgave8-LagingAvFormer.m4a", { loop: false, auto: true });
     const ferdigoppg8 = new Blocks.Sound("../Lydfil/Oppgave8-ferdigKnapp.m4a", { loop: false, auto: false });
     const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 });
-    const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.PNG",{ x: 230, y: 200, width: 500, height: 450 });
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 });
+    const Gladkylling_v2= new Blocks.Image ("../Bilder/Gladkylling_v2.png",{ x: 230, y: 200, width: 500, height: 450 });
     const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
 
     Gladkylling_v2.hide();
@@ -403,8 +403,8 @@ function oppgave9() {
     const oppg9lyd = new Blocks.Sound("../Lydfil/Oppgave9-hinkOgHopp.m4a", { loop: false, auto: true });
     const ferdigoppg9 = new Blocks.Sound("../Lydfil/Oppgave9-ferdigKnapp.m4a", { loop: false, auto: false });
     const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 300, width: 100, height: 100 });
-    const Gladkylling_v2 = new Blocks.Image ("../Bilder/Gladkylling_v2.PNG", { x: 230, y: 200, width: 500, height: 450 });
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 300, width: 100, height: 100 });
+    const Gladkylling_v2 = new Blocks.Image ("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
     const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 410, width: 100, height: 100 });
 
     Gladkylling_v2.hide();
@@ -445,9 +445,9 @@ function oppgave10() {
     const oppg10lyd = new Blocks.Sound("../Lydfil/Oppgave10-eggpåskje.m4a", { loop: false, auto: true });
     const ferdigoppg10 = new Blocks.Sound("../Lydfil/Oppgave10-ferdigKnapp.m4a", { loop: false, auto: false });
     const Leisegkylling = new Blocks.Image("../Bilder/Leisegkylling.png", { x: 300, y: 200, width: 500, height: 450 });
-    const Gladkylling_v2 = new Blocks.Image("../Bilder/Gladkylling_v2.PNg", { x: 230, y: 200, width: 500, height: 450 });
+    const Gladkylling_v2 = new Blocks.Image("../Bilder/Gladkylling_v2.png", { x: 230, y: 200, width: 500, height: 450 });
     const ferdigKnapp= new Blocks.Image("../Bilder/Ferdigknapp.png", { x: 0, y: 500, width: 100, height: 100 });
-    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.PNG", { x: 0, y: 400, width: 100, height: 100 });
+    const spillIgjennKnapp = new Blocks.Image("../Bilder/oppgavereply.png", { x: 0, y: 400, width: 100, height: 100 });
 
     Gladkylling_v2.hide();
    
